@@ -22,10 +22,10 @@
 
 2. **Commands**
 
-In[]: import pwn
-In[]: pwn.context.arch
-Out[]: i386
-In[]: pwn.context.bits
-Out[]: 32
-In[]: pwn.context.arch='amd64'    -- Not required for binary assignment
+In[]: import pwn <br/>
+In[]: pwn.context.arch <br/>
+Out[]: i386 <br/>
+In[]: pwn.context.bits <br/>
+Out[]: 32 <br/>
+In[]: pwn.context.arch='amd64'    -- Not required for binary assignment <br/>
 
