@@ -1,7 +1,7 @@
 # BinaryHackersCheatSheet
-#1. checksec <binary>
+# 1. checksec <binary>
  
-  [*] '/var/challenge/level8/8_real'
+  [*] '/var/challenge/level8/8_real'\n
     Arch:     i386-32-little
     RELRO:    No RELRO
     Stack:    No canary found
