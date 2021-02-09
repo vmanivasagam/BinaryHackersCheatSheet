@@ -1,5 +1,7 @@
 # BinaryHackersCheatSheet
 
+# pwntools
+
 1. **checksec \<binary\>**
  
   [*] '/var/challenge/level8/8_real' <br/>
@@ -17,3 +19,13 @@
 **NX** - The abbreviation NX stands for non-execute or non-executable segment. It means that the application, when loaded in memory, does not allow any of its segments to be both writable and executable. The idea here is that writable memory should never be executed (as it can be manipulated) and vice versa. Having NX enabled would be good. <br/>
 
 **PIE** - The last abbreviation is PIE, meaning Position Independent Executable. A No PIE application tells the loader which virtual address it should use (and keeps its memory layout quite static). Hence, attacks against this application know up-front how the virtual memory for this application is (partially) organized. Combined with in-kernel ASLR (Address Space Layout Randomization, which Gentoo's hardened-sources of course support) PIE applications have a more diverge memory organization, making attacks that rely on the memory structure more difficult. <br/>
+
+2. **Commands**
+
+In[]: import pwn
+In[]: pwn.context.arch
+Out[]: i386
+In[]: pwn.context.bits
+Out[]: 32
+In[]: pwn.context.arch='amd64'    -- Not required for binary assignment
+
