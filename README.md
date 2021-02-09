@@ -1,5 +1,6 @@
 # BinaryHackersCheatSheet
-# 1. checksec <binary>
+
+1. **checksec /<binary/>**
  
   [*] '/var/challenge/level8/8_real' <br/>
     Arch:     i386-32-little<br/>
